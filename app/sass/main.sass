@@ -1,0 +1,703 @@
+@import "vars"
+@import "fonts"
+
+
+@font-face  
+    font-family: playfairDisplay 
+    src: url("../fonts/playfair/PlayfairDisplay-Bold.ttf") 
+
+
+
+@font-face  
+    font-family: playfairDisplay 
+    src: url(../fonts/playfair/PlayfairDisplay-BoldItalic.ttf) 
+    font-style: italic 
+    font-weight: bold 
+ 
+
+@font-face  
+    font-family: bebas 
+    src: url(../fonts/bebas/BebasNeue-Bold.otf) 
+    font-weight: bold 
+ 
+
+@font-face  
+    font-family: bebasRegular 
+    src: url(../fonts/bebas/BebasNeue-Regular.otf) 
+
+@font-face  
+    font-family: bebasLight
+    src: url(../fonts/bebas/BebasNeue-Light.otf) 
+
+
+@font-face  
+	font-family: playfairDisplayRegular 
+	src: url("../fonts/playfair/PlayfairDisplay-Regular.ttf")
+	font-weight: normal 
+
+
+*  
+	padding: 0 
+	margin: 0 
+	box-sizing: border-box
+
+
+
+body  
+	overflow-x: hidden 
+	a
+		text-decoration: none
+ 
+.hero  
+    width: 1920px 
+    height: 920px 
+    background-image: url(../img/heroBg1.png)
+    display: flex 
+ 
+
+
+    &__left-side  
+        width: 360px 
+        height: 100% 
+ 
+
+        &__top-block  
+            background-color: rgba(142, 91, 73, 0.9) 
+            width: 360px 
+            height: 240px 
+            display: flex 
+            justify-content: center 
+            align-items: center 
+            text-align: center 
+            color: white 
+            font-family: playfairDisplay 
+
+            h1 
+                font-size: 36px 
+                line-height: 32px 
+                margin-bottom: 23px 
+            
+                span 
+                    margin-right: -8px 
+ 
+
+        &__bottom-block  
+            background-color: rgba(112, 91, 73, 0.7) 
+            width: 360px 
+            height: 680px 
+            padding-left: 40px 
+ 
+
+            h2  
+                color: white 
+                font-family: bebas 
+                font-weight: bold 
+                font-size: 30px 
+                line-height: 48px 
+                letter-spacing: 3px     
+ 
+
+            &__about  
+                padding-top: 86px 
+ 
+
+    &__main-content  
+        height: 100% 
+        width: 1560px 
+		
+.hero__left-side__bottom-block__callback  
+	height: 280px 
+	width: 360px
+	padding-top: 147px 
+
+	h2  
+		font-size: 50px 
+		font-weight: bold 
+		letter-spacing: -1px 
+
+
+	span  
+		font-size: 28px 
+		letter-spacing: 0.6px 
+		font-weight: normal 
+	
+
+	&__text  
+		color: white 
+		font-size: 18px 
+		font-family: playfairDisplay 
+		cursor: pointer 
+ 
+    
+ 
+
+.hero__main-content 
+	h2  
+		color: white 
+		text-align: center 
+		font-family: bebas 
+		font-size: 48px 
+		margin-right: 360px 
+		margin-top: 231px 
+ 
+
+.hero__main-content 
+	h1  
+		color: white 
+		text-align: center 
+		font-family: playfairDisplay 
+		font-size: 120px 
+		margin-right: 360px 
+		line-height: 110px 
+ 
+
+	span 
+		margin-right: -28px 
+ 
+
+	&__view-plans  
+		width: 420px 
+		height: 100px 
+		background-color: #FFE323 
+		border: solid 1px #FFE323 
+		font-family: bebas 
+		color: #52332A 
+		font-size: 30px 
+		margin-top: 72px 
+		margin-left: 390px 
+		letter-spacing: 3px 
+		padding-bottom: 0px 
+		padding-left: 3px 
+		font-weight: bold 
+		cursor: pointer 
+ 
+
+	&__bottom-block  
+		height: 240px 
+		width: 100% 
+		display: flex 
+ 
+
+		&__wrapper  
+			width: 1080px 
+			display: flex 
+			justify-content: center 
+			padding-top: 60px 
+		
+			img  
+				width: 34px 
+				height: 64px 
+				margin-left: 120px 
+				cursor: pointer 
+ 
+
+.hero__main-content__bottom-block__threeD  
+	width: 240px 
+	height: 240px 
+	display: flex 
+	justify-content: center 
+	align-items: center 
+
+
+	&__text  
+		width: 200px 
+		height: 200px 
+		border: solid 2px white 
+		font-family: bebas 
+		color: white 
+		font-size: 96px 
+		font-weight: bold 
+
+		p 
+			line-height: 35px 
+			margin-left: 13px 
+			margin-top: 61px 
+			text-align: center 
+
+
+			span  
+				font-family: playfairDisplay 
+				font-style: italic 
+				font-weight: bold 
+				font-size: 48px 
+				margin-right: 14px 
+ 
+.first-home  
+	top: 560px 
+	left: 360px 
+
+.second-home  
+	right: 480px 
+	top: 420px  
+
+.choose-house  
+    width: 1920px 
+    height: 920px 
+    background-image: url(../img/housesBg.png) 
+    padding-top: 85px 
+    position: relative 
+
+.choose-house__header-text  
+	font-family: bebas 
+	font-size: 72px 
+	color: white 
+	text-align: center 
+
+.choose-house__home  
+	width: 180px 
+	height: 100px 
+	background-color: #70be5e 
+	display: flex 
+	align-items: center 
+	justify-content: center 
+	color: white 
+	position: absolute 
+	cursor: pointer 
+ 
+
+	p 
+		font-family: bebas 
+		font-weight: bold 
+		font-size: 30px 
+		text-align: center 
+		letter-spacing: 3px 
+ 
+
+	&:before  
+		content: "" 
+		position: absolute 
+		top: -10px 
+		left: 80px 
+		width: 0 
+		height: 0 
+		border-style: solid 
+		border-width: 0 10px 10px 10px 
+		border-color: transparent transparent #70be5e transparent 
+ 
+	&:hover  
+		background-color: #0074b2 
+ 
+
+.choose-house__wrapper:hover > .choose-house__home:before 
+    border-color: transparent transparent #0074b2 transparent 
+    cursor: pointer 
+ 
+
+.choose-house__cloud-wrapper  
+    position: absolute 
+    top: 0 
+    left: 0 
+ 
+
+.choose-house__cloud2-wrapper  
+    position: absolute 
+    top: 0 
+    right: 0px 
+ 
+
+.choose-house__bird-wrapper  
+    position: absolute 
+    bottom: -194px 
+    left: 0 
+ 
+
+.advantages
+	height: 868px
+	width: 1920px
+
+	h1
+		text-align: center
+		font-size: 72px
+		font-family: playfairDisplay
+		color: #7c5244
+		line-height: 108px
+		margin-top: 92px
+
+	&__wrap-container
+		margin: 0 auto
+		margin-top: 90px
+		width: 1200px
+		height: 620px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+		&__element
+			width: 280px
+			height: 320px
+			text-align: center
+			margin: 0 40px
+			margin-top: -10px
+
+			h3
+				font-family: playfairDisplay
+				font-size: 24px
+				color: #7c5244
+				font-weight: bold
+				margin-top: 27px
+				letter-spacing: 0.7
+
+
+			p
+				font-family: playfairDisplayRegular
+				font-weight: normal
+				font-style: normal
+				font-size: 18px
+				color: #000000
+				margin-top: 20px
+
+			&:nth-child(n+4)
+				margin-top: -30px
+
+
+.consultation
+	height: 260px
+	width: 1920px
+	background:   url(../img/greenBg.png)
+
+	&__container
+		height: 260px
+		width: 1920px
+		padding-top: 55px
+		padding-left: 24px
+		
+		&__content
+			width: 945px
+			height: 140px
+			margin:  auto
+			display: flex
+			justify-content: space-between
+
+			&__button
+				width: 420px 
+				height: 100px 
+				background-color: #FFE323 
+				border: solid 1px #FFE323 
+				font-family: bebas 
+				color: #52332A 
+				font-size: 30px 
+				letter-spacing: 3px 
+				padding-bottom: 0px 
+				padding-left: 3px 
+				font-weight: bold 
+				cursor: pointer 
+				margin-top: 25px
+				margin-right: 25px
+    			
+
+			.wrapper
+				p
+					font-family: playfairDisplay
+					color: white
+					font-size: 24px
+
+				h1
+					font-family: bebasLight
+					color: white
+					font-size: 72px
+					font-weight: bold
+					line-height: 113px
+					
+					span
+						font-family: bebas
+						font-weight: 800
+
+.accomplishment
+	height: 1398px
+	width: 1920px
+	
+	h1
+		text-align: center
+		font-size: 72px
+		font-family: playfairDisplay
+		color: #7c5244
+		line-height: 108px
+		margin-top: 72px
+		
+
+	&__content
+		padding-top: 60px
+		display: flex
+		position: relative
+
+		&__bird
+			position: absolute
+			top: -160px
+			left: 240px
+			
+
+		&__build
+			width: 920px
+			height: 540px
+
+		&__text
+			width: 600px
+			height: 450px
+			margin-left: 40px
+			margin-top: 35px
+
+			p
+				font-family: playfairDisplay
+				font-weight: bold
+				font-size: 18px
+
+				&:last-child
+					font-family: playfairDisplayRegular
+					font-weight: normal
+					margin-top: 24px
+					
+
+	&__himki
+
+		&__about
+			margin: auto
+			width: 1200px
+			height: 530px
+			padding-top: 84px
+
+			h2
+				text-align: left
+				font-size: 48px
+				font-family: playfairDisplay
+				font-weight: bold
+				color: #7c5244
+				line-height: 108px
+
+			p
+				font-family: playfairDisplayRegular
+				font-weight: normal
+				font-size: 18px
+
+				&:nth-child(2)
+					margin-top: 2px
+					font-family: playfairDisplay
+					font-weight: bold
+
+				&:nth-child(3)
+					margin-top: 25px	
+					letter-spacing: 0.002em			
+
+				&:nth-child(4)
+					letter-spacing: 0.0012em
+					margin-top: 25px	
+						
+
+				&:nth-child(5)
+					letter-spacing: 0.002em	
+					margin-top: 23px
+
+.installment-plan
+	background-image: url(../img/shadowBuildsBg.png)
+	width: 1920px
+	height: 920px
+	padding-top: 160px
+
+
+	&__content
+		width: 487px
+		height: 420px
+		margin:  auto
+		text-align: center
+
+		button
+			width: 420px 
+			height: 100px 
+			background-color: #FFE323 
+			border: solid 1px #FFE323 
+			font-family: bebas 
+			color: #52332A 
+			font-size: 30px 
+			letter-spacing: 3px 
+			padding-bottom: 0px 
+			padding-left: 3px 
+			font-weight: bold 
+			cursor: pointer 
+			margin-top: 64px
+
+		h2
+			font-family: bebas
+			font-size: 48px	
+			color: white
+
+		h1
+			font-family: playfairDisplay
+			color: white
+			font-size: 120px
+			line-height: 87px
+			margin-top: -5px
+
+			span
+				font-size: 72px
+
+	&__slider		
+		margin: auto
+		margin-top: 183px
+		width: 1200px
+
+		position: relative
+		svg
+			width: 32px
+			height: 32px
+			fill: #482615
+
+			&:hover
+				fill: #C0957E
+
+		.item 
+			display: flex
+			justify-content: center
+			.bank1
+				width: 348px
+				height: 54px
+				// margin-right: 45px
+
+			.bank2
+				width: 240px
+				height: 92px
+
+			.bank3
+				width: 326px
+				height: 62px
+				// margin-left: 70px
+		
+		.custom-owl-nav span:hover 
+			cursor: pointer
+
+	.owl-stage
+		display: flex
+		align-items: center
+
+	.next-svg
+		position: absolute
+		top: 32px
+		right: -120px
+		z-index: 200
+
+	.prev-svg
+		position: absolute
+		transform: rotate(180deg)
+		top: 32px
+		left: -120px
+		z-index: 200
+
+
+.build-photo
+	width: 1920px
+	height: 870px
+	padding-top: 88px
+
+	.left-arrow
+		width: 70px
+		height: 64px
+		position: absolute
+		top: 264px
+		left: 345px
+		z-index: 300
+		transform: rotate(180deg)	
+		cursor: pointer		
+		pointer-events: none
+
+	.right-arrow
+		width: 70px
+		height: 64px
+		position: absolute
+		top: 264px
+		left: 1505px
+		z-index: 300	
+		cursor: pointer
+		pointer-events: none
+
+	h1
+		font-family: playfairDisplay
+		color: #8A5141
+		font-size: 72px
+		text-align: center
+
+
+	&__3d-slider
+		margin: 11px auto
+		display: flex
+		justify-content: center
+		position: relative
+		#carousel
+			position: absolute
+			top: 55px
+			left: 480px
+			transform-style: preserve-3d
+
+
+		.card
+			position: absolute
+			transform-style: preserve-3d
+			transition: 1s
+		.card:nth-child(1)
+			transform: translateX(0) translateZ(0)
+
+		.card:nth-child(2)
+			transform: translateX(-50%)  translateZ(-50px) scale(0.5)
+			opacity: 0.6
+			cursor: pointer
+		.card:nth-child(3)
+			transform: translateX(50%) translateZ(-50px) scale(0.5)
+			opacity: 0.6
+			cursor: pointer
+
+footer 
+	height: 640px
+	width: 1920px
+	.map
+		position: relative
+		&__text
+			position: absolute
+			top: 60px
+			left: 750px
+			background-image: url(../img/shText.png)
+			background-size: cover
+			z-index: 300
+			width: 440px
+			height: 319px
+			padding-top: 32px
+			padding-left: 50px
+
+			h3
+				font-family: bebas
+				font-size: 30px
+				letter-spacing: 3px
+				color: #4c362e
+				
+			h4
+				font-size: 19px
+				margin-top: 25px
+				font-family: playfairDisplayRegular
+			.phone
+				margin-top: 24px
+				p
+					font-family: playfairDisplayRegular
+					font-size: 18px
+
+	.footer
+		height: 200px
+		width: 1920px
+		display: flex
+		justify-content: center
+		align-items: center
+		
+		&__wrapper
+			width: 1200px
+			height: 200px
+			display: flex
+			justify-content: space-between
+			align-items: center
+		
+
+			&__root
+				margin-bottom: 51px
+
+			&__logo
+				margin-bottom: 4px
+
+			p
+				font-family: playfairDisplayRegular
+				font-size: 18px
+				color: #282828
+
