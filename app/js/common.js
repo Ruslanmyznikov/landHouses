@@ -5,7 +5,7 @@ $(function() {
 	var owl = $('.owl-carousel');
 
 	owl.owlCarousel({
-		loop:true,
+		loop:false,
 		margin:10,
 		nav:false,
 		dots: false,
@@ -13,10 +13,10 @@ $(function() {
 			0:{
 				items:1
 			},
-			800:{
+			900:{
 				items:2
 			},
-			1200:{
+			1500:{
 				items:3
 			}
 		}
@@ -76,36 +76,39 @@ document.getElementById('carousel').onclick = function() {
   next();  
 };
 
-$(function() {
-	var owl = $('.owl-carousel');
+// $(function() {
+// 	var owl = $('.owl-carousel');
 
-	owl.owlCarousel({
-		loop:true,
-		margin:10,
-		nav:false,
-		dots: false,
-		responsive:{
-			0:{
-				items:1
-			},
-			800:{
-				items:2
-			},
-			1200:{
-				items:3
-			}
-		}
-	});
+// 	owl.owlCarousel({
+// 		loop:false,
+// 		margin:'10px',
+// 		nav:false,
+//     dots: false,
+//     center: true,
+//     autoPlay:true,
+//     autoplayTimeout:2000,
+// 		responsive:{
+// 			0:{
+// 				items:1
+// 			},
+// 			800:{
+// 				items:2
+// 			},
+//       1300:{
+//         items:3
+//       },
+// 		}
+// 	});
 	
-	$('.custom-owl-next').click(function() {
-	  owl.trigger('next.owl.carousel');
-	});
+// 	$('.custom-owl-next').click(function() {
+// 	  owl.trigger('next.owl.carousel');
+// 	});
 	
-	$('.custom-owl-prev').click(function() {
-	  owl.trigger('prev.owl.carousel');
-	});
+// 	$('.custom-owl-prev').click(function() {
+// 	  owl.trigger('prev.owl.carousel');
+// 	});
 
-});
+// });
 
 var cards = document.getElementsByClassName('card'),
     transforms = [

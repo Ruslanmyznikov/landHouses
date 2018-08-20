@@ -21,6 +21,23 @@
     &__bird-wrapper
       bottom: -150px
 
+  .accomplishment
+    &__content
+      &__bird
+        left: 30px
+
+@media screen and (max-width: 1600px)
+  .accomplishment__content__build
+    height: 440px
+  .accomplishment__content__text
+    margin-top: 0
+    padding-right: 30px
+    text-align: justify
+
+  .installment-plan__slider
+    width: 75%
+
+
 @media screen and (max-width: 1365px)
   .hero__main-content__wrapper
     width: 100%
@@ -33,6 +50,33 @@
   .choose-house
     display: none
 
+  .accomplishment
+    &__content
+      height: auto
+      display: flex
+      flex-wrap: wrap-reverse
+      &__build
+        margin-left: auto
+        margin-right: 60px
+        margin-top: 50px
+      &__text
+        height: auto
+        width: 970px
+      &__bird
+        display: none
+
+    &__himki
+      &__about
+        width: 90%
+
+.installment-plan
+  .prev-svg
+    left: -80px
+  .next-svg
+    right: -80px
+
+  .installment-plan
+    margin-top: 60px
 // <1200px
 @media screen and (max-width: 1200px)
   .hero__left-side
@@ -41,8 +85,28 @@
   .advantages
     &__wrap-container
       width: 770px
-    
 
+  .accomplishment
+
+      &__content
+        justify-content: center 
+        &__build
+          margin-right: auto
+          height: 540px
+        &__text
+          width: 90%
+          margin: auto
+          padding-right: 0
+        &__bird
+          display: none
+
+      &__himki
+        text-align: justify
+        &__about
+          width: 90%
+
+  .installment-plan
+      margin-top: 60px
 
 // <992px
 @media screen and (max-width: 991px)
@@ -86,6 +150,19 @@
       width: 330px
       height: 80px
       font-size: 24px
+
+  .accomplishment
+    &__content
+      &__build
+        height: 400px
+
+  .installment-plan
+
+    .prev-svg
+      left: -40px
+    .next-svg
+      right: -40px
+
 // <768px
 @media screen and (max-width: 767px)
   .hero
@@ -119,6 +196,28 @@
           width: 260px
           height: 60px
           font-size: 18px
+
+  .accomplishment
+    h1
+      font-size: 54px
+
+    h2
+      font-size: 36px
+
+    &__content
+      &__build
+        display: none
+
+      &__text
+        p
+          &:first-child
+            font-size: 16px
+          &:last-child
+            font-size: 16px
+    
+    &__himki
+      p
+        font-size: 16px
   // <576px
 @media screen and (max-width: 575px)
   .hero
@@ -172,6 +271,48 @@
           height: 60px
           font-size: 18px
           margin-top: 0
+
+  .accomplishment
+    h1
+      font-size: 36px
+
+    h2
+      font-size: 24px
+
+    &__content
+      padding-top: 20px
+    &__himki
+      &__about
+        padding-top: 20px
+
+  .installment-plan
+    
+    h2
+      font-size: 27px
+    h1
+      font-size: 81px
+      span
+        font-size: 52px
+    .prev-svg, .next-svg
+      display: none
+
+    button
+      width: 280px
+      height: 80px
+    
+    &__slider
+      .item
+        .bank1
+          height: 36px
+          width: 232px
+        .bank2
+          width: 160px 
+          height: 62px
+
+        .bank3
+          width: 217px
+          height: 42px
+
 
   @media screen and (min-width: 380px)
     .consultation
