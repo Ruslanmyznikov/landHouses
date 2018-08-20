@@ -2,30 +2,120 @@
 
 
 /*==========  Desktop First  ==========*/
+@media screen and (max-width: 1750px)
+  .hero
+    .hero__main-content__bottom-block__threeD
+      right: 50px
 
-// ≥1200px
-+media-breakpoint-down(lg)
+  .first-home
+    left: 150px
+    top: 450px
 
-// ≥992px
-+media-breakpoint-down(md)
+  .second-home
+    right: 200px
+    top: 300px
 
-// ≥768px
-+media-breakpoint-down(sm)
+  .choose-house
+    height: 750px
 
-// ≥576px
-+media-breakpoint-down(xs)
+    &__bird-wrapper
+      bottom: -150px
+
+@media screen and (max-width: 1365px)
+  .hero__main-content__wrapper
+    width: 100%
+  .hero__main-content__bottom-block__threeD
+    display: none
+
+  .hero__main-content__bottom-block__wrapper
+    width: 100%
+
+  .choose-house
+    display: none
+
+// <1200px
+@media screen and (max-width: 1200px)
+  .hero__left-side
+    min-width: 300px
+
+  .advantages
+    &__wrap-container
+      width: 770px
+    
 
 
-/*==========  Mobile First  ==========*/
+// <992px
+@media screen and (max-width: 991px)
+  .hero
+    &__left-side
+      min-width: 250px
+      &__botom-block
+        &__callback
+          width: 100%
+          span
+            font-size: 24px
 
-// ≤576px
-+media-breakpoint-up(sm)
+      h2
+        font-size: 24px
 
-// ≤768px
-+media-breakpoint-up(md)
+    &__main-content
+      &__view-plans
+        width: 330px
+        font-size: 24px
 
-// ≤992px
-+media-breakpoint-up(lg)
+      &__wrapper
+        h1
+          font-size: 82px
 
-// ≤1200px
-+media-breakpoint-up(xl)
+        h2
+          font-size: 36px
+
+          
+      
+    &__main-content__bottom-block
+      display: none
+
+// <768px
+@media screen and (max-width: 767px)
+  .hero
+    min-height: 100vh
+    max-height: 700px
+    h2
+      margin-top: 0
+    &__main-content
+      display: flex
+      align-items: center
+    &__left-side
+      display: none
+  .advantages
+    &__wrap-container
+      width: 576px
+      justify-content: center
+// <576px
+@media screen and (max-width: 575px)
+  .hero
+    height: 100vh
+    &__main-content
+      display: flex
+      align-items: center
+
+    h2
+      font-size: 24px
+      margin-top: 0
+    h1
+      font-size: 54px
+      line-height: 81px
+    &__main-content
+      &__view-plans
+        margin-top: 40px
+        width: 240px
+        height: 80px
+        font-size: 18px
+
+  .advantages
+    h1
+      font-size: 36px
+    &__wrap-container
+      margin-top: 20px
+      width: auto
+      justify-content: center

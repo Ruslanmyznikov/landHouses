@@ -10,24 +10,24 @@
 
 @font-face  
     font-family: playfairDisplay 
-    src: url(../fonts/playfair/PlayfairDisplay-BoldItalic.ttf) 
+    src: url("../fonts/playfair/PlayfairDisplay-BoldItalic.ttf")
     font-style: italic 
     font-weight: bold 
  
 
 @font-face  
     font-family: bebas 
-    src: url(../fonts/bebas/BebasNeue-Bold.otf) 
-    font-weight: bold 
- 
+    src: url("../fonts/bebas/BebasNeue-Bold.otf")
+    font-weight: bold
+
 
 @font-face  
     font-family: bebasRegular 
-    src: url(../fonts/bebas/BebasNeue-Regular.otf) 
+    src: url("../fonts/bebas/BebasNeue-Regular.otf")
 
 @font-face  
     font-family: bebasLight
-    src: url(../fonts/bebas/BebasNeue-Light.otf) 
+    src: url("../fonts/bebas/BebasNeue-Light.otf")
 
 
 @font-face  
@@ -49,13 +49,11 @@ body
 		text-decoration: none
  
 .hero  
-    width: 1920px 
+    width: 100vw
     height: 920px 
-    background-image: url(../img/heroBg1.png)
+    background: url(../img/heroBg.png) no-repeat
     display: flex 
  
-
-
     &__left-side  
         width: 360px 
         height: 100% 
@@ -63,7 +61,7 @@ body
 
         &__top-block  
             background-color: rgba(142, 91, 73, 0.9) 
-            width: 360px 
+            width: 100% 
             height: 240px 
             display: flex 
             justify-content: center 
@@ -83,7 +81,7 @@ body
 
         &__bottom-block  
             background-color: rgba(112, 91, 73, 0.7) 
-            width: 360px 
+            width: 100%  
             height: 680px 
             padding-left: 40px 
  
@@ -103,11 +101,22 @@ body
 
     &__main-content  
         height: 100% 
-        width: 1560px 
-		
+        width: 100%
+
+.hero__main-content__wrapper
+	display: flex
+	width: 77%
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+
+            
+
+
 .hero__left-side__bottom-block__callback  
 	height: 280px 
-	width: 360px
+	width: 100%
 	padding-top: 147px 
 
 	h2  
@@ -137,7 +146,6 @@ body
 		text-align: center 
 		font-family: bebas 
 		font-size: 48px 
-		margin-right: 360px 
 		margin-top: 231px 
  
 
@@ -147,7 +155,6 @@ body
 		text-align: center 
 		font-family: playfairDisplay 
 		font-size: 120px 
-		margin-right: 360px 
 		line-height: 110px 
  
 
@@ -164,7 +171,6 @@ body
 		color: #52332A 
 		font-size: 30px 
 		margin-top: 72px 
-		margin-left: 390px 
 		letter-spacing: 3px 
 		padding-bottom: 0px 
 		padding-left: 3px 
@@ -179,7 +185,7 @@ body
  
 
 		&__wrapper  
-			width: 1080px 
+			width: 77%
 			display: flex 
 			justify-content: center 
 			padding-top: 60px 
@@ -187,55 +193,63 @@ body
 			img  
 				width: 34px 
 				height: 64px 
-				margin-left: 120px 
 				cursor: pointer 
  
 
-.hero__main-content__bottom-block__threeD  
-	width: 240px 
-	height: 240px 
-	display: flex 
-	justify-content: center 
-	align-items: center 
+.hero__main-content__bottom-block__threeD
+	width: 240px
+	height: 240px
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: #23AD4E
+	position: absolute
+	right: 223px
 
 
-	&__text  
-		width: 200px 
-		height: 200px 
-		border: solid 2px white 
-		font-family: bebas 
-		color: white 
-		font-size: 96px 
-		font-weight: bold 
+	&__text
+		width: 200px
+		height: 200px
+		border: solid 2px white
+		font-family: bebas
+		color: white
+		font-size: 96px
+		font-weight: bold
 
-		p 
-			line-height: 35px 
-			margin-left: 13px 
-			margin-top: 61px 
-			text-align: center 
+	p
+		line-height: 35px
+		margin-left: 13px
+		margin-top: 61px
+		text-align: center
 
 
-			span  
-				font-family: playfairDisplay 
-				font-style: italic 
-				font-weight: bold 
-				font-size: 48px 
-				margin-right: 14px 
- 
+		span	
+			font-family: playfairDisplay
+			font-style: italic
+			font-weight: bold
+			font-size: 48px
+			margin-right: 14px
+
 .first-home  
 	top: 560px 
 	left: 360px 
+	// left: 17%
+	// top: 50% 
 
 .second-home  
 	right: 480px 
-	top: 420px  
+	top: 420px
+	// right: 25%
+	// top: 46.5%  
 
 .choose-house  
-    width: 1920px 
-    height: 920px 
-    background-image: url(../img/housesBg.png) 
-    padding-top: 85px 
-    position: relative 
+	width: 100vw 
+	height: 920px 
+	background-image: url("../img/housesBg.png")
+	background-size: contain
+	background-repeat: no-repeat
+	padding-top: 85px 
+	position: relative 
 
 .choose-house__header-text  
 	font-family: bebas 
@@ -303,7 +317,7 @@ body
 
 .advantages
 	height: 868px
-	width: 1920px
+	width: 100vw
 
 	h1
 		text-align: center
@@ -701,3 +715,4 @@ footer
 				font-size: 18px
 				color: #282828
 
+@import "media"
