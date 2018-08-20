@@ -1,5 +1,5 @@
 
-  AOS.init();
+  // AOS.init();
 
 $(function() {
 	var owl = $('.owl-carousel');

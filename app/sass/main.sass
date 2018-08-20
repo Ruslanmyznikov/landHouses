@@ -48,6 +48,8 @@ body
 	a
 		text-decoration: none
  
+section, .hero, footer
+	margin: 0 auto
 .hero  
     width: 100vw
     height: 920px 
@@ -371,7 +373,7 @@ body
 
 	&__container
 		height: 260px
-		width: 100%
+		width: 100vw
 		padding-top: 55px
 		padding-left: 24px
 		
@@ -596,7 +598,7 @@ body
 
 
 .build-photo
-	width: 1920px
+	width: 100vw
 	height: 870px
 	padding-top: 88px
 
@@ -638,8 +640,6 @@ body
 			top: 55px
 			left: 480px
 			transform-style: preserve-3d
-
-
 		.card
 			position: absolute
 			transform-style: preserve-3d
@@ -648,23 +648,23 @@ body
 			transform: translateX(0) translateZ(0)
 
 		.card:nth-child(2)
-			transform: translateX(-50%)  translateZ(-50px) scale(0.5)
+			transform: translateX(-50%)  translateZ(-50px) scale(0.8)
 			opacity: 0.6
 			cursor: pointer
 		.card:nth-child(3)
-			transform: translateX(50%) translateZ(-50px) scale(0.5)
+			transform: translateX(50%) translateZ(-50px) scale(0.8)
 			opacity: 0.6
 			cursor: pointer
 
 footer 
 	height: 640px
-	width: 1920px
+	width: 100vw
 	.map
 		position: relative
 		&__text
 			position: absolute
 			top: 60px
-			left: 750px
+			left: 39%
 			background-image: url(../img/shText.png)
 			background-size: cover
 			z-index: 300
@@ -691,7 +691,7 @@ footer
 
 	.footer
 		height: 200px
-		width: 1920px
+		width: 100vw
 		display: flex
 		justify-content: center
 		align-items: center

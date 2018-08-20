@@ -16,7 +16,7 @@
     top: 300px
 
   .choose-house
-    height: 750px
+    height: 800px
 
     &__bird-wrapper
       bottom: -150px
@@ -25,6 +25,27 @@
     &__content
       &__bird
         left: 30px
+
+  .build-photo
+    overflow-x: hidden!important
+    #carousel
+      left: 50%
+      margin-left: -330px
+    img
+      width: 700px
+
+    .left-arrow
+      top: 200px
+      left: 300px
+      display: none
+
+    .right-arrow
+      top: 200px
+      left: 1290px
+      display: none
+    
+
+      
 
 @media screen and (max-width: 1600px)
   .accomplishment__content__build
@@ -69,14 +90,18 @@
       &__about
         width: 90%
 
-.installment-plan
-  .prev-svg
-    left: -80px
-  .next-svg
-    right: -80px
-
   .installment-plan
-    margin-top: 60px
+    .prev-svg
+      left: -80px
+    .next-svg
+      right: -80px
+
+    .installment-plan
+      margin-top: 60px
+
+  footer
+    .footer__wrapper
+      width: 80%
 // <1200px
 @media screen and (max-width: 1200px)
   .hero__left-side
@@ -86,6 +111,7 @@
     &__wrap-container
       width: 770px
 
+  
   .accomplishment
 
       &__content
@@ -107,6 +133,13 @@
 
   .installment-plan
       margin-top: 60px
+
+  .build-photo
+    height: 770px
+    #carousel
+      margin-left: -300px
+    img
+      width: 580px
 
 // <992px
 @media screen and (max-width: 991px)
@@ -139,7 +172,7 @@
     &__main-content__bottom-block
       display: none
   .consultation__container__content
-    width: 95%
+    width: auto
     justify-content: space-around
     flex-wrap: wrap
     .wrapper
@@ -163,9 +196,17 @@
     .next-svg
       right: -40px
 
+
+  .build-photo
+    height: 560px
+    #carousel
+      margin-left: -184px
+    img
+      width: 350px
 // <768px
 @media screen and (max-width: 767px)
   .hero
+    background-position: center center
     min-height: 100vh
     max-height: 700px
     h2
@@ -181,6 +222,7 @@
       justify-content: center
   .consultation
     height: 220px
+  
     &__container
       height: 220px
       &__content
@@ -218,10 +260,22 @@
     &__himki
       p
         font-size: 16px
+
+  .build-photo
+    #carousel
+      margin-left: -152px
+    img
+      width: 300px
+
+  footer
+    .map__text
+      margin-left: -150px
   // <576px
 @media screen and (max-width: 575px)
   .hero
     height: 100vh
+    background-size: cover
+    background-position: center center
     &__main-content
       display: flex
       align-items: center
@@ -254,6 +308,7 @@
     background-repeat: no-repeat
     &__container
       height: 360px
+      width: auto
       padding-left: 0
       &__content
         
@@ -262,7 +317,7 @@
             font-size: 21px
             text-align: center
           h1
-            font-size: 36px
+            font-size: 34px
             text-align: center
 
         &__button
@@ -290,7 +345,7 @@
     h2
       font-size: 27px
     h1
-      font-size: 81px
+      font-size: 74px
       span
         font-size: 52px
     .prev-svg, .next-svg
@@ -299,6 +354,7 @@
     button
       width: 280px
       height: 80px
+      font-size: 21px
     
     &__slider
       .item
@@ -313,7 +369,21 @@
           width: 217px
           height: 42px
 
+  .build-photo
+    h1
+      font-size: 54px
 
+  footer
+    .map__text
+      width: 320px
+      height: 242px
+      margin-left: -140px
+      padding-left: 30px
+
+    .footer__wrapper
+      flex-wrap: wrap-reverse
+      justify-content: center
+      margin-top: 50px
   @media screen and (min-width: 380px)
     .consultation
       &__container
