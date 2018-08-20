@@ -74,7 +74,18 @@
       
     &__main-content__bottom-block
       display: none
+  .consultation__container__content
+    width: 95%
+    justify-content: space-around
+    flex-wrap: wrap
+    .wrapper
+      h1
+        font-size: 48px
 
+    &__button
+      width: 330px
+      height: 80px
+      font-size: 24px
 // <768px
 @media screen and (max-width: 767px)
   .hero
@@ -91,7 +102,24 @@
     &__wrap-container
       width: 576px
       justify-content: center
-// <576px
+  .consultation
+    height: 220px
+    &__container
+      height: 220px
+      &__content
+
+        .wrapper
+          p
+            font-size: 21px
+          h1
+            font-size: 36px
+
+        &__button
+          margin-right: 0
+          width: 260px
+          height: 60px
+          font-size: 18px
+  // <576px
 @media screen and (max-width: 575px)
   .hero
     height: 100vh
@@ -119,3 +147,37 @@
       margin-top: 20px
       width: auto
       justify-content: center
+
+
+  .consultation
+    height: 360px
+    background-size: cover
+    background-repeat: no-repeat
+    &__container
+      height: 360px
+      padding-left: 0
+      &__content
+        
+        .wrapper
+          p
+            font-size: 21px
+            text-align: center
+          h1
+            font-size: 36px
+            text-align: center
+
+        &__button
+          margin-right: 0
+          width: 240px
+          height: 60px
+          font-size: 18px
+          margin-top: 0
+
+  @media screen and (min-width: 380px)
+    .consultation
+      &__container
+        &__content
+          &__button
+            width: 360px
+            height: 80px
+            font-size: 24px
