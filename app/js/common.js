@@ -76,39 +76,6 @@ document.getElementById('carousel').onclick = function() {
   next();  
 };
 
-// $(function() {
-// 	var owl = $('.owl-carousel');
-
-// 	owl.owlCarousel({
-// 		loop:false,
-// 		margin:'10px',
-// 		nav:false,
-//     dots: false,
-//     center: true,
-//     autoPlay:true,
-//     autoplayTimeout:2000,
-// 		responsive:{
-// 			0:{
-// 				items:1
-// 			},
-// 			800:{
-// 				items:2
-// 			},
-//       1300:{
-//         items:3
-//       },
-// 		}
-// 	});
-	
-// 	$('.custom-owl-next').click(function() {
-// 	  owl.trigger('next.owl.carousel');
-// 	});
-	
-// 	$('.custom-owl-prev').click(function() {
-// 	  owl.trigger('prev.owl.carousel');
-// 	});
-
-// });
 
 var cards = document.getElementsByClassName('card'),
     transforms = [
@@ -182,4 +149,30 @@ $(document).ready(function(){
 
 });
 
+$(function() {
   
+  // contact form animations
+  $('.contact').click(function() {
+    
+    $('#contactForm').fadeToggle();
+  })
+  $(document).mousedown(function (e) {
+    var container = $("#contactForm");
+    
+    if (container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+
+  });
+
+});
+
+$(function(){
+  $('.close').click(function() {
+    let container = $("#contactForm");
+    container.fadeOut();
+
+  });
+})
